@@ -19,7 +19,7 @@ get_header(); ?>
 								the_archive_title ( '<h3 class="archive-page-title">'.__( 'Browsed by', 'nisarg' ).'<br>', '</h3>'  );
 								the_archive_description ( '<div class="taxonomy-description">', '</div>' )
 							?>
-						</header><!-- .page-header --> -->
+						</header><!-- .page-header -->
 
 					<div id="primary" class="col-md-9 content-area">
 						<main id="main" class="site-main" role="main">

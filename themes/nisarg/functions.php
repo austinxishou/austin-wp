@@ -159,6 +159,14 @@ add_action( 'wp_enqueue_scripts', 'nisarg_scripts' );
 
 
 /**
+ * 支持 markdown 插入图片
+ */
+add_filter( 'image_send_to_editor', 'new_image_send_to_editor', 1, 8);
+function new_image_send_to_editor( $html, $id, $caption, $title, $align, $url, $size, $alt ) {
+    return "![$alt]($url)";
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
