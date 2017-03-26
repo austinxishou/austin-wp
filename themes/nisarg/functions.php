@@ -138,6 +138,8 @@ function nisarg_scripts() {
 
 	wp_enqueue_style( 'nisarg-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'austin-style', get_template_directory_uri().'/css/austin-style.css');
+
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/font-awesome/css/font-awesome.min.css' );   
 	
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js',array('jquery'),'',true);  
